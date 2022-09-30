@@ -7,15 +7,19 @@
     <a-scene>
       <!--mattress-->
       <a-box scale="1 1.5 1.5" position="-1.25 0.22 -5" rotation="0 90 0" width = "2" height ="0.3" length = "8" color="#f5f5e8"></a-box>
-      <!--rug-->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#E5D3BE"></a-plane>
+      <!--wooden floor-->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#E5D3BE" src = "wood.jpg"></a-plane>
       <!--walls-->
-      <a-plane position="0 1 -6" rotation="0 0 0" width="4" height="2" color="#919995"></a-plane>
-      <a-plane position="-2 1 -4" rotation="0 90 0" width="4" height="2" color="#919995"></a-plane>
-      <a-plane position="2 1 -4" rotation="0 -90 0" width="4" height="2" color="#919995"></a-plane>
+      <a-plane position="0 1 -6" rotation="0 0 0" width="4" height="2" color="#919995" src = "wall2.jpg"></a-plane>
+      <a-plane position="-2 1 -4" rotation="0 90 0" width="4" height="2" color="#919995" src = "movie.jpg"></a-plane>
+      <a-plane position="2 1 -4" rotation="0 -90 0" width="4" height="2" color="#919995" src = "wall1.jpg"></a-plane>
       <a-plane position="0 1 -2" rotation="0 -180 0" width="4" height="2" color="#919995"></a-plane>
+      
+      <!-- background scene -->
+      <a-sky src="apartment.jpeg"></a-sky>
+      
       <!--bed details-->
-      <a-box scale="0.75 0.2 1.5" position="-1.25 0.48 -4.75" rotation="0 90 0" width = "2" height ="0.3" length = "8" color="#F2A7CB"></a-box>
+      <a-box scale="0.75 0.2 1.5" position="-1.25 0.48 -4.75" rotation="0 90 0" width = "2" height ="0.3" length = "8" color="#F2A7CB" scr = "cotton.jpg"></a-box>
       <a-box scale="0.35 0.35 0.45" position="-1.63 0.5 -5.76" rotation="0 0 0" width = "2" height ="0.3" length = "8" color="#EB348C"></a-box>
       <a-box scale="0.35 0.35 0.45" position="-0.87 0.5 -5.76" rotation="0 0 0" width = "2" height ="0.3" length = "8" color="#EB348Z"></a-box>
       <!--block shelves-->
@@ -27,12 +31,12 @@
       <a-box scale="0.5 0.2 0.25" position="-0.3 0.02 -5.5" rotation="0 90 0" width = "2" height ="0.3" length = "8" color="#f5f5e8"></a-box>
       
       <!--chair-->
-      <a-box scale=".2 .2 .2 .2" position="-1.55 0.25 -3.9" rotation="0 0 0" width="1" height="0.4" length=".43" color="#FF8985" src = "wool.jpg"></a-box>
-      <a-box scale=".2 .2 .2 .2" position="-1.64 0.38 -3.9" rotation="0 0 90" width="1.2" height="0.37" length=".3" color="#FF8985" src = "wool.jpg"></a-box>
-      <a-cylinder scale=".2 .2 .2 .2" position="-1.66 .14 -3.98" radius="0.1" height="1.5" color="#FF8985" src = "wool.jpg"></a-cylinder>
-      <a-cylinder scale=".2 .2 .2 .2" position="-1.66 .14 -3.84" radius="0.1" height="1.5" color="#FF8985" src = "wool.jpg"></a-cylinder>
-      <a-cylinder scale=".2 .2 .2 .2" position="-1.47 .14 -3.98" radius="0.1" height="1.5" color="#FF8985" src = "wool.jpg"></a-cylinder>
-      <a-cylinder scale=".2 .2 .2 .2" position="-1.47 .14 -3.84" radius="0.1" height="1.5" color="#FF8985" src = "wool.jpg"></a-cylinder>
+      <a-box scale=".2 .2 .2 .2" position="-1.55 0.25 -3.9" rotation="0 0 0" width="1" height="0.4" length=".43" color="#ffc0cb" src = "wool.jpg"></a-box>
+      <a-box scale=".2 .2 .2 .2" position="-1.64 0.38 -3.9" rotation="0 0 90" width="1.2" height="0.37" length=".3" color="#ffc0cb" src = "wool.jpg"></a-box>
+      <a-cylinder scale=".2 .2 .2 .2" position="-1.66 .14 -3.98" radius="0.1" height="1.5" color="#ffc0cb" src = "wool.jpg"></a-cylinder>
+      <a-cylinder scale=".2 .2 .2 .2" position="-1.66 .14 -3.84" radius="0.1" height="1.5" color="#ffc0cb" src = "wool.jpg"></a-cylinder>
+      <a-cylinder scale=".2 .2 .2 .2" position="-1.47 .14 -3.98" radius="0.1" height="1.5" color="#ffc0cb" src = "wool.jpg"></a-cylinder>
+      <a-cylinder scale=".2 .2 .2 .2" position="-1.47 .14 -3.84" radius="0.1" height="1.5" color="#ffc0cb" src = "wool.jpg"></a-cylinder>
       <!--solid shelf-->
       <a-box scale=".2 .2 .2 .2" position="-1.85 .33 -3.9" rotation="0 0 0" width="1.5" height="3.15" length="5" color="#f5f5e8"></a-box>
       <a-box scale=".2 .2 .2 .2" position="-1.79 .33 -3.9" rotation="0 90 0" width=".7" height="2.75" length="4" color="#f8f8ff"></a-box>
@@ -40,12 +44,9 @@
       <!--rug under chair-->
       <a-plane position="-1.5 0.01 -4" rotation="-90 0 0" color="#FFFDD0" src = "wool.jpg"></a-plane>
       
-      <!--floor mat-->
+      <!--floor mat by bed-->
       <a-box scale="0.4 0.2 0.35" position="-0.3 0.02 -4.45" rotation="0 90 0" width = "2" height ="0.3" length = "8" color ="#FFFDD0" src = "cherry.jpeg"></a-box>
 
-      <!-- light -->
-      
-
-      <a-sky color="#ECECEC"></a-sky>
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
     </a-scene>
   </body></html>
